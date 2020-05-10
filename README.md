@@ -1,2 +1,2 @@
 # Lab3_Vadim_Ostafiychuk
-Lab2_Vadim_Ostafiychuk
+Lab3_Vadim_Ostafiychuk
