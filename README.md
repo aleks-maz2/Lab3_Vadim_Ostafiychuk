@@ -1,5 +1,5 @@
 # Lab3_Vadim_Ostafiychuk
-Lab2_Vadim_Ostafiychuk
+Lab3_Vadim_Ostafiychuk
 
 Лабораторна #3 написана на мові C у Pelles C IDE
 
