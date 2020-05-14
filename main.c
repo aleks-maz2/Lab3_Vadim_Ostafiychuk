@@ -40,7 +40,7 @@ int main()
 		printf("Такого завдання немає! \n\n\n\n");
 	}
 
-
+	printf("\n\n\n");
 	system("pause");
 	return 0;
     
@@ -100,14 +100,14 @@ int zavdanya3()
 	 
     int n;
     
-    printf("Введіть місяць: ");
+    printf("Введiть мiсяць: ");
     scanf("%d",&n);
 
     switch(n) {
-        case 1: printf("1 - Січень");break;
+        case 1: printf("1 - Сiчень");break;
         case 2: printf("2 - Лютий");break;
         case 3: printf("3 - Березень");break;
-        case 4: printf("4 - Квітень");break;
+        case 4: printf("4 - Квiтень");break;
         case 5: printf("5 - Травень");break;
         case 6: printf("6 - Червень");break;
         case 7: printf("7 - Липень");break;
@@ -116,8 +116,9 @@ int zavdanya3()
         case 10: printf("10 - Жовтень");break;
         case 11: printf("11 - Листопад");break;
         case 12: printf("12 - Грудень");break;
-        default: printf("Такого місяця немає \n");break;
+        default: printf("Такого мiсяця немає \n");break;
     }
+	printf("\n\n\n\n");
    return 0;
 }
 
@@ -132,8 +133,13 @@ int zavdanya4() {
     
     printf("z= ");
     scanf("%d", &z);
-    
-    if (((1-y)/(1+x)+z) <= 0) {
+
+	
+    if ((1+x) == 0) {
+		printf("1+%d = 0 а на ноль дiлити не можна", x);
+		return 0;
+	}
+    else if (((1-y)/(1+x)+z) <= 0) {
         printf("Число меньше или равно 0");
         return 0;
     }
