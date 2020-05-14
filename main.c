@@ -13,7 +13,7 @@ int main()
 	//zavdanya3();
 	
 
-	printf("Введiть номер завдання: (1-5)");
+	printf("Введiть номер завдання: (1-4)");
 	scanf("%d", &abuse);
 
 	if(abuse == 1) 
@@ -31,10 +31,6 @@ int main()
 	else if (abuse == 4) 
 	{
 		zavdanya4();
-	}
-	else if (abuse == 5) 
-	{
-		zavdanya5();
 	}	
 	else {
 		printf("Такого завдання немає! \n\n\n\n");
@@ -150,30 +146,4 @@ int zavdanya4() {
    return 0;
 }
 
-int zavdanya5() 
-{
-	int colCount;
-    printf("Введiть розмiр масиву: ");
-    scanf("%d", &colCount);
-    
-    int a[colCount];
-    for(int i = 0; i < colCount; i++)
-        { printf("a[%d]=", i);
-        scanf("%d", &a[i]);
-    }
 
-    int minValueElem = a[0];
-    int minValueIndexElem = 0;
-    
-    for(int i = 1; i < colCount; i++) {
-        if (a[i] < minValueElem) {
-            minValueElem = a[i];
-            minValueIndexElem = i;
-        }
-        
-    }
-    
-    printf("Iндекс найменшого елемента = %d\n\n", minValueIndexElem);
-
-    return 0;
-}
